@@ -1,0 +1,60 @@
+#navimage{
+    width:120px;
+    float: left;
+
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: skyblue;
+    overflow: auto;
+    margin-top: 10px;
+
+
+}
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar a:hover {
+    background-color: #000;
+}
+
+body{
+    background-color: palegreen;
+    align-items: center;
+
+}
+
+.radio{
+    color: aqua;
+    background-color: aqua;
+}
+
+.correct1 .correct2 .correct3 .correct4 .correct5 .correct6 .correct7 .correct8 .correct9 .correct10{
+    color: greenyellow;
+}
+
+.great{
+    background-color: Green;
+}
+
+h2{
+    font-size: large;
+    font-weight: 800;
+    color: blueviolet;
+    text-align: center;
+}
+.TimeLeft{
+    font-weight: 800;
+    font-size: large;
+    color: powderblue;
+}
+
+      

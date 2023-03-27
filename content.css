@@ -1,0 +1,53 @@
+#navimage{
+    width:120px;
+    float: left;
+
+}
+
+
+
+.navbar {
+    width: 100%;
+    background-color: skyblue;
+    overflow: auto;
+    margin-top: 10px;
+
+
+}
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar a:hover {
+    background-color: #000;
+}
+img
+{ 
+    height: auto;
+    width: 500px;
+    align-items: center;
+
+}
+*{
+    background-color: aqua;
+}
+h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 35px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+body{
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkblue;
+
+}

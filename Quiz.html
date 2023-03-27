@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRICK-HITS QUIZ</title>
+    <link rel="stylesheet" href="Quiz.css">
+    
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="#"></a> <img id =navimage src="CRICK-HITS-LOGO.jpeg" alt="logo">
+        <a href="#"><i class="home"></i> Home</a>
+        <a href="#"><i class="buy"></i> Buy products</a>
+        <a href="#"><i class="about"></i>About</a>
+        <a href="#"><i class="sitemap"></i> Sitemap</a>
+        <a href="#"><i class="query"></i>Query form</a>
+        <a href="#"><i class="thumbnail"></i>Thumbnail</a>
+    
+    
+    
+    </div>
+    
+    <h2>CRICK-HITS QUIZ</h2>
+    
+    <section>
+        <div class="container">
+          <h1>00:00</h1>
+        </div>
+    </section>
+    
+    
+    
+    Q1. Which country won the 2014 T20 World cup?<br> 
+    <input type="radio" name="Question 1" id="correct1">Sri Lanka<br>
+    <input type="radio" name="Question 1"  >West Indies<br>
+    <input type="radio" name="Question 1" >England<br>
+    <input type="radio" name="Question 1" >India<br>
+
+    Q2. Virat Kohli played his 100th test match against which opponent?<br>
+    <input type="radio" name="Question 2">England<br>
+    <input type="radio" name="Question 2" >New Zealand<br>
+    <input type="radio" name="Question 2" >South Africa<br>
+    <input type="radio" name="Question 2" id="correct2" >Sri Lanka<br>
+    
+    Q3. Which player hit the most sixes in the 2021 T20 WC?<br>
+    <input type="radio" name="Question 3">Kane Williamson<br>
+    <input type="radio" name="Question 3">Babar Azam<br>
+    <input type="radio" name="Question 3">David Warner<br>
+    <input type="radio" name="Question 3" id="correct3">Jos Buttler<br>
+
+    Q4. Which batter scored the most fifty-plus scores in the 2021 T20 world cup?<br>
+    <input type="radio" name="Question 4">Charith Asalanka<br>
+    <input type="radio" name="Question 4" id="correct4">Babar Azam<br>
+    <input type="radio" name="Question 4">David Warner<br>
+    <input type="radio" name="Question 4">Mohommad Rizwan<br>
+
+    Q5. What was the highest team total in the 2021 edition T20 WC?<br>
+    <input type="radio" name="Question 5">200<br>
+    <input type="radio" name="Question 5">194<br>
+    <input type="radio" name="Question 5" id="correct5">210<br>
+    <input type="radio" name="Question 5">190<br>
+
+    Q6. Which player holds the record for the fastest fifty in a T20 WC final?<br>
+    <input type="radio" name="Question 6">Kane Williamson<br>
+    <input type="radio" name="Question 6" id="correct6">Mitchell Marsh<br>
+    <input type="radio" name="Question 6">Daryll Mitchell<br>
+    <input type="radio" name="Question 6">Matthew Wade<br>
+
+    Q7. Who was the player of the tournament in 2021 T20WC?<br>
+    <input type="radio" name="Question 7">Matthew Wade<br>
+    <input type="radio" name="Question 7">Adam Zampa<br>
+    <input type="radio" name="Question 7">Charith Asalanka<br>
+    <input type="radio" name="Question 7" id="correct7">David Warner<br>
+
+    Q8. Which of the following players do not have a T20 World cup hat-trick?<br>
+    <input type="radio" name="Question 8">Bret Lee<br>
+    <input type="radio" name="Question 8" id="correct8">Lasith Malinga<br>
+    <input type="radio" name="Question 8">Wanindu Hasaranga<br>
+    <input type="radio" name="Question 8">Kagiso Rabada<br>
+
+    Q9. Who holds the record for the highest individual score in T20 World Cup history?<br>
+    <input type="radio" name="Question 9" id="correct9">Brendon Mcculum<br>
+    <input type="radio" name="Question 9">Chris Gayle<br>
+    <input type="radio" name="Question 9">Alex Hales<br>
+    <input type="radio" name="Question 9">Tamim Iqbal<br>
+
+    Q10. Which batsmen has the highest average in T20 World Cup history?<br>
+    <input type="radio" name="Question 10" id="correct10">Virat Kohli<br>
+    <input type="radio" name="Question 10">Chris Gayle<br>
+    <input type="radio" name="Question 10">Jp Duminy<br>
+    <input type="radio" name="Question 10">Rohit Sharma<br>
+
+    <input type="submit" name="submit" value="Submit Quiz" onclick="result()">
+
+    <script type="text/javascript">
+        let selectedRadioOptions=getRadioValue(Crick-Hits.responses);
+        alert(selectedRadioOptions);
+        function getRadioValue(){
+            const values = [];
+    for ( let i = 0; i< radioArray.length; i++) {
+        if ( radioArray[i].checked){
+            return radioArray[i].value;
+        }
+    }
+    return "";
+}
+        function result(){
+    
+            var score=0;
+            if (document.getElementById('correct1').checked)
+            {
+               score++;  
+            }
+            if (document.getElementById('correct2').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct3').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct4').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct5').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct6').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct7').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct8').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct9').checked)
+            {
+                score++;
+            }
+            if (document.getElementById('correct10').checked)
+            {
+                score++;
+            }
+            
+            document.write("Your score is:"+score);
+        }
+        if (score >=6){
+        {
+            great;
+        }
+        
+        document.write(":"+great);
+
+            
+    }
+  
+
+
+</script>
+<script src="Quiz.js"></script>
+<h4>Dinil Jayatunge-20210831-w1868302</h4>
+<a name="top"></a>
+    <a href="#top">Back to top of page</a>
+</body>
+</html>
